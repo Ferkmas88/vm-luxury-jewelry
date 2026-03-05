@@ -7,11 +7,11 @@
 
 // ── Image path helper (uses generated AI images for categories) ──────────────
 const CAT_IMG = {
-  bracelets: 'images/category_bracelets_1772720567454.png',
-  earrings:  'images/category_earrings_1772720586909.png',
-  necklaces: 'images/category_necklaces_1772720872621.png',
-  pendants:  'images/category_pendants_1772720901641.png',
-  rings:     'images/category_rings_1772720921012.png',
+  bracelets: 'https://raw.githubusercontent.com/Ferkmas88/vm-luxury-jewelry/main/images/category_bracelets_1772720567454.png',
+  earrings:  'https://raw.githubusercontent.com/Ferkmas88/vm-luxury-jewelry/main/images/category_earrings_1772720586909.png',
+  necklaces: 'https://raw.githubusercontent.com/Ferkmas88/vm-luxury-jewelry/main/images/category_necklaces_1772720872621.png',
+  pendants:  'https://raw.githubusercontent.com/Ferkmas88/vm-luxury-jewelry/main/images/category_pendants_1772720901641.png',
+  rings:     'https://raw.githubusercontent.com/Ferkmas88/vm-luxury-jewelry/main/images/category_rings_1772720921012.png',
   kids:      null  // placeholder gradient used in CSS
 };
 
