@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>V&M Luxury Jewelry – Fine Jewelry Store</title>
+  <meta name="description" content="V&M Luxury Jewelry ofrece una exclusiva colección de anillos, aretes, collares, pulseras y colgantes en oro y diamantes. Tienda en Louisville, KY." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar">
+    <p>✦ Free shipping on orders over $200 &nbsp;|&nbsp; ✦ Authentic 10K, 14K & 18K Gold &nbsp;|&nbsp; ✦ Visit us: 5520 Fern Valley Rd Suite 105, Louisville, KY</p>
+  </div>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <button id="menu-toggle" aria-label="Menu" class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#" class="logo">
+        <span class="logo-v">V</span><span class="logo-amp">&</span><span class="logo-m">M</span>
+        <small>LUXURY JEWELRY</small>
+      </a>
+
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="#" data-filter="all" class="nav-link active">All</a></li>
+          <li class="has-dropdown">
+            <a href="#" data-filter="bracelets" class="nav-link">Bracelets</a>
+            <ul class="dropdown">
+              <li><a href="#" data-filter="bracelets-kids">Kid Bracelets</a></li>
+              <li><a href="#" data-filter="bracelets-men">Men's Bracelets</a></li>
+              <li><a href="#" data-filter="bracelets-women">Women's Bracelets</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" data-filter="earrings" class="nav-link">Earrings</a>
+            <ul class="dropdown">
+              <li><a href="#" data-filter="earrings-baby">Baby Earrings</a></li>
+              <li><a href="#" data-filter="earrings-diamond">Diamond Earrings</a></li>
+              <li><a href="#" data-filter="earrings-drop">Drop Earrings</a></li>
+              <li><a href="#" data-filter="earrings-fashion">Fashion Earrings</a></li>
+              <li><a href="#" data-filter="earrings-hoop">Hoop Earrings</a></li>
+              <li><a href="#" data-filter="earrings-stud">Stud Earrings</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" data-filter="necklaces" class="nav-link">Necklaces</a>
+            <ul class="dropdown">
+              <li><a href="#" data-filter="necklaces-chain">Chain Necklaces</a></li>
+              <li><a href="#" data-filter="necklaces-cuban">Cuban-Link</a></li>
+              <li><a href="#" data-filter="necklaces-diamond">Diamond Necklaces</a></li>
+              <li><a href="#" data-filter="necklaces-fashion">Fashion Necklaces</a></li>
+              <li><a href="#" data-filter="necklaces-white">White Gold</a></li>
+              <li><a href="#" data-filter="necklaces-yellow">Yellow Gold</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" data-filter="pendants" class="nav-link">Pendants</a>
+            <ul class="dropdown">
+              <li><a href="#" data-filter="pendants-diamond">Diamond Pendants</a></li>
+              <li><a href="#" data-filter="pendants-fashion">Fashion Pendants</a></li>
+              <li><a href="#" data-filter="pendants-kids">Kid Pendants</a></li>
+              <li><a href="#" data-filter="pendants-men">Men's Pendants</a></li>
+              <li><a href="#" data-filter="pendants-women">Women's Pendants</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#" data-filter="rings" class="nav-link">Rings</a>
+            <ul class="dropdown">
+              <li><a href="#" data-filter="rings-engagement">Engagement Rings</a></li>
+              <li><a href="#" data-filter="rings-gemstone">Gemstone Rings</a></li>
+              <li><a href="#" data-filter="rings-men">Men's Rings</a></li>
+              <li><a href="#" data-filter="rings-women">Women's Rings</a></li>
+            </ul>
+          </li>
+          <li><a href="#" data-filter="kids" class="nav-link">Kids</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="search-toggle" aria-label="Search" class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button id="cart-toggle" aria-label="Cart" class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span id="cart-count" class="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="search-bar" class="search-bar hidden">
+      <input type="text" id="search-input" placeholder="Search jewelry..." />
+      <button id="search-close">✕</button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE NAV ===== -->
+  <div id="mobile-overlay" class="mobile-overlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="C:\Users\ferkm\.gemini\antigravity\brain\a66f005a-e1f2-43c1-a925-101a7be03917\hero_banner_1772720136676.png" alt="V&M Luxury Jewelry Collection" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-subtitle">✦ FINE JEWELRY ✦</p>
+      <h1>Timeless Elegance,<br/><em>Crafted in Gold</em></h1>
+      <p class="hero-desc">Authentic 10K, 14K & 18K gold jewelry — diamonds, gemstones, and fine metals<br/>curated by Mairin Mastrapa in Louisville, KY</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+        <a href="https://www.instagram.com/vmbymairinmastrapa/" target="_blank" class="btn-outline">Follow on Instagram</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES BAR ===== -->
+  <section class="features-bar">
+    <div class="feature">
+      <span class="feat-icon">💎</span>
+      <div>
+        <strong>Authentic Gold</strong>
+        <p>10K, 14K & 18K certified</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feat-icon">🚚</span>
+      <div>
+        <strong>Free Shipping</strong>
+        <p>On orders over $200</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feat-icon">🔒</span>
+      <div>
+        <strong>Secure Payment</strong>
+        <p>100% safe checkout</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feat-icon">↩️</span>
+      <div>
+        <strong>Easy Returns</strong>
+        <p>30-day return policy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY SHOWCASE ===== -->
+  <section class="categories-section" id="categories">
+    <div class="section-header">
+      <p class="section-sub">Our Collections</p>
+      <h2>Shop by Category</h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card" data-cat="bracelets">
+        <div class="cat-img-wrap">
+          <img src="C:\Users\ferkm\.gemini\antigravity\brain\a66f005a-e1f2-43c1-a925-101a7be03917\category_bracelets_1772720567454.png" alt="Bracelets" />
+        </div>
+        <div class="cat-info">
+          <h3>Bracelets</h3>
+          <p>Kid · Men · Women</p>
+          <span class="cat-cta">Explore →</span>
+        </div>
+      </div>
+      <div class="cat-card" data-cat="earrings">
+        <div class="cat-img-wrap">
+          <img src="C:\Users\ferkm\.gemini\antigravity\brain\a66f005a-e1f2-43c1-a925-101a7be03917\category_earrings_1772720586909.png" alt="Earrings" />
+        </div>
+        <div class="cat-info">
+          <h3>Earrings</h3>
+          <p>Hoops · Studs · Drops · Diamond</p>
+          <span class="cat-cta">Explore →</span>
+        </div>
+      </div>
+      <div class="cat-card" data-cat="necklaces">
+        <div class="cat-img-wrap">
+          <img src="C:\Users\ferkm\.gemini\antigravity\brain\a66f005a-e1f2-43c1-a925-101a7be03917\category_necklaces_1772720872621.png" alt="Necklaces" />
+        </div>
+        <div class="cat-info">
+          <h3>Necklaces</h3>
+          <p>Chain · Cuban · Diamond · Gold</p>
+          <span class="cat-cta">Explore →</span>
+        </div>
+      </div>
+      <div class="cat-card" data-cat="pendants">
+        <div class="cat-img-wrap">
+          <img src="C:\Users\ferkm\.gemini\antigravity\brain\a66f005a-e1f2-43c1-a925-101a7be03917\category_pendants_1772720901641.png" alt="Pendants" />
+        </div>
+        <div class="cat-info">
+          <h3>Pendants</h3>
+          <p>Diamond · Fashion · Men · Women</p>
+          <span class="cat-cta">Explore →</span>
+        </div>
+      </div>
+      <div class="cat-card" data-cat="rings">
+        <div class="cat-img-wrap">
+          <img src="C:\Users\ferkm\.gemini\antigravity\brain\a66f005a-e1f2-43c1-a925-101a7be03917\category_rings_1772720921012.png" alt="Rings" />
+        </div>
+        <div class="cat-info">
+          <h3>Rings</h3>
+          <p>Engagement · Gemstone · Men · Women</p>
+          <span class="cat-cta">Explore →</span>
+        </div>
+      </div>
+      <div class="cat-card" data-cat="kids">
+        <div class="cat-img-wrap kids-placeholder">
+          <div class="placeholder-icon">👶✨</div>
+        </div>
+        <div class="cat-info">
+          <h3>Kids Collection</h3>
+          <p>Bracelets · Earrings · Pendants</p>
+          <span class="cat-cta">Explore →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="products-section" id="products">
+    <div class="section-header">
+      <p class="section-sub">Fine Selection</p>
+      <h2>Our Jewelry</h2>
+      <div class="gold-divider"></div>
+    </div>
+
+    <!-- Filter + Sort bar -->
+    <div class="filter-bar">
+      <div class="filter-chips" id="filter-chips">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="bracelets">Bracelets</button>
+        <button class="chip" data-filter="earrings">Earrings</button>
+        <button class="chip" data-filter="necklaces">Necklaces</button>
+        <button class="chip" data-filter="pendants">Pendants</button>
+        <button class="chip" data-filter="rings">Rings</button>
+        <button class="chip" data-filter="kids">Kids</button>
+      </div>
+      <select id="sort-select" class="sort-select">
+        <option value="default">Sort: Featured</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A–Z</option>
+      </select>
+    </div>
+
+    <div class="products-grid" id="products-grid">
+      <!-- Products injected by JS -->
+    </div>
+  </section>
+
+  <!-- ===== BRAND STORY ===== -->
+  <section class="brand-story">
+    <div class="brand-story-inner">
+      <div class="brand-text">
+        <p class="section-sub">Our Story</p>
+        <h2>Curated by Mairin Mastrapa</h2>
+        <div class="gold-divider left"></div>
+        <p>V&M Luxury Jewelry was born from a passion for fine craftsmanship and timeless elegance. Each piece in our collection is carefully selected to offer you the finest gold and diamond jewelry at accessible prices.</p>
+        <p>Located in Louisville, Kentucky, we serve customers locally and across the United States with authentic 10K, 14K, and 18K gold pieces — from classic Cuban-link chains to sparkling diamond engagement rings.</p>
+        <div class="brand-links">
+          <a href="https://www.instagram.com/vmbymairinmastrapa/" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            @vmbymairinmastrapa
+          </a>
+          <a href="https://www.facebook.com/p/VM-Jewelry-100071568313288/" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            V&M Jewelry on Facebook
+          </a>
+        </div>
+      </div>
+      <div class="brand-stats">
+        <div class="stat">
+          <span class="stat-num">2K+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">Unique Pieces</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">10K–18K</span>
+          <span class="stat-label">Certified Gold</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5★</span>
+          <span class="stat-label">Google Reviews</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact">
+    <div class="section-header">
+      <p class="section-sub">Get in Touch</p>
+      <h2>Contact Us</h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <strong>Visit Us</strong>
+            <p>5520 Fern Valley Rd Suite 105<br/>Louisville, KY 40228, USA</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:mairinmastrapabb@gmail.com">mairinmastrapabb@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon">📱</span>
+          <div>
+            <strong>Social Media</strong>
+            <p>
+              <a href="https://www.instagram.com/vmbymairinmastrapa/" target="_blank">Instagram</a> &nbsp;|&nbsp;
+              <a href="https://www.facebook.com/p/VM-Jewelry-100071568313288/" target="_blank">Facebook</a>
+            </p>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3134.57!2d-85.6601059!3d38.1554889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88690b7f32a01bd3%3A0x88024437e70e183a!2sV%26M%20Luxury%20Jewelry!5e0!3m2!1sen!2sus!4v1"
+            width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="V&M Luxury Jewelry Location"></iframe>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <input type="text" id="cf-name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="cf-email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="cf-phone" placeholder="Phone Number" />
+        </div>
+        <div class="form-group">
+          <select id="cf-subject">
+            <option value="">Select Interest…</option>
+            <option>Bracelets</option>
+            <option>Earrings</option>
+            <option>Necklaces</option>
+            <option>Pendants</option>
+            <option>Rings</option>
+            <option>Kids Collection</option>
+            <option>Custom Order</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="cf-message" rows="4" placeholder="Your message…"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width">Send Message ✦</button>
+        <p id="form-success" class="form-success hidden">✅ Message sent! We'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-footer">V<span>&</span>M</span>
+        <small>LUXURY JEWELRY</small>
+        <p>Authentic fine jewelry crafted in gold &amp; diamonds. Louisville, KY.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#" data-filter="bracelets">Bracelets</a></li>
+          <li><a href="#" data-filter="earrings">Earrings</a></li>
+          <li><a href="#" data-filter="necklaces">Necklaces</a></li>
+          <li><a href="#" data-filter="pendants">Pendants</a></li>
+          <li><a href="#" data-filter="rings">Rings</a></li>
+          <li><a href="#" data-filter="kids">Kids</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="https://vmluxuryjewelry.com/shipping-policy/" target="_blank">Shipping Policy</a></li>
+          <li><a href="https://vmluxuryjewelry.com/returns-and-cancellation/" target="_blank">Returns &amp; Cancellation</a></li>
+          <li><a href="https://vmluxuryjewelry.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+          <li><a href="https://vmluxuryjewelry.com/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/vmbymairinmastrapa/" target="_blank" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.facebook.com/p/VM-Jewelry-100071568313288/" target="_blank" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 V&M Luxury Jewelry. All rights reserved. &nbsp;|&nbsp; Designed with ✦ for Mairin Mastrapa</p>
+    </div>
+  </footer>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="icon-btn">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty" id="cart-empty">
+        <span>💎</span>
+        <p>Your cart is empty</p>
+        <button class="btn-outline" onclick="closeCart()">Continue Shopping</button>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+      <button class="btn-primary full-width" onclick="checkout()">Checkout ✦</button>
+      <p class="cart-note">* For orders &amp; inquiries, please contact us directly.</p>
+    </div>
+  </aside>
+
+  <!-- ===== PRODUCT MODAL ===== -->
+  <div id="product-overlay" class="product-overlay"></div>
+  <div id="product-modal" class="product-modal">
+    <button id="modal-close" class="modal-close">✕</button>
+    <div class="modal-inner">
+      <div class="modal-img">
+        <img id="modal-img" src="" alt="" />
+        <div id="modal-badge" class="modal-badge"></div>
+      </div>
+      <div class="modal-info">
+        <p id="modal-category" class="modal-category"></p>
+        <h2 id="modal-name"></h2>
+        <p id="modal-price" class="modal-price"></p>
+        <p id="modal-desc" class="modal-desc"></p>
+        <div class="modal-meta">
+          <span id="modal-material"></span>
+          <span id="modal-stock"></span>
+        </div>
+        <div class="modal-actions">
+          <div class="qty-control">
+            <button id="qty-minus" onclick="changeQty(-1)">−</button>
+            <span id="qty-val">1</span>
+            <button id="qty-plus" onclick="changeQty(1)">+</button>
+          </div>
+          <button class="btn-primary" id="modal-add-btn" onclick="addFromModal()">Add to Cart ✦</button>
+        </div>
+        <div class="modal-contact">
+          <p>Questions? <a href="mailto:mairinmastrapabb@gmail.com">Contact us</a> or DM on <a href="https://www.instagram.com/vmbymairinmastrapa/" target="_blank">Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/15027024545" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ===== TOAST ===== -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
